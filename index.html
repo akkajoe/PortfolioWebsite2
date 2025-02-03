@@ -44,7 +44,7 @@
             <h1 class="title"></h1>
             <p class="section__text__p2"></p>
             <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open()">
+                <button class="btn btn-color-1" onclick="window.open('assets/CreativeResumePixar.pdf')">
                     Download CV
                 </button>
             </div>
@@ -59,7 +59,7 @@
                 <div class = about-containers>
                 <div class = "details-container">
                     <h3>Education</h3>
-                    <p>Bsc. Computer Science, B. Des. Digital Arts and Media Design, Penn State, 2023-Present</p>
+                    <p>Bsc. Computer Science, B. Des. Digital Arts and Media Design, The Pennsylvania State University, 2023-Present</p>
                     <p>The Assam Valley School, Batch of 2022</p>
                 </div>
                 <div class = "details-container">
@@ -198,10 +198,25 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Seasons of Change</h2>
                 <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button">
-                        Demo
+                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/seasons-of-change'">
+                        GitHub
                     </button>
-                    
+                    <button class="btn btn-color-2" type="button" onclick="playVideo()">
+                        Installation Video
+                    </button>
+                    <script>
+                        function playVideo() {
+                            // Replace 'your-video.mp4' with the path to your local video file
+                            var videoPath = "assets/SeasonsOfChangeInstallationVideo.mp4";
+                            var newTab = window.open();
+                            newTab.document.write(`
+                                <video width="640" height="360" controls autoplay>
+                                    <source src="${videoPath}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            `);
+                        }
+                    </script>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -224,10 +239,25 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Green Sounds</h2>
                 <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button">
-                        Demo
+                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/green-sounds'">
+                        GitHub
                     </button>
-                    
+                    <button class="btn btn-color-2" type="button" onclick="poc()">
+                        Proof of Concept
+                    </button>
+                    <script>
+                        function poc() {
+                            // Replace 'your-video.mp4' with the path to your local video file
+                            var videoPath2 = "assets/GreenSounds.mp4";
+                            var newTab = window.open();
+                            newTab.document.write(`
+                                <video width="640" height="360" controls autoplay>
+                                    <source src="${videoPath2}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            `);
+                        }
+                    </script>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -250,10 +280,25 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Peer to Peer Chat</h2>
                 <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button">
-                        Demo
+                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/P2P_Networking'">
+                        GitHub
                     </button>
-                    
+                    <button class="btn btn-color-2" type="button" onclick=p2pvideo()>
+                        Video Demo
+                    </button>
+                    <script>
+                        function p2pvideo() {
+                            // Replace 'your-video.mp4' with the path to your local video file
+                            var videoPath2 = "assets/P2PChat-demoVideo - 1735646874838.mp4";
+                            var newTab = window.open();
+                            newTab.document.write(`
+                                <video width="640" height="360" controls autoplay>
+                                    <source src="${videoPath2}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            `);
+                        }
+                    </script>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -261,25 +306,40 @@
                     <div class="SeasonsOfChange-container">
                         <!-- Image -->
                         <img 
-                            src="assets\GreenSoundsimg.png" 
+                            src="assets\courseScheduler-img.png" 
                             alt="Seasons of Change Thumbnail" 
                             class="SeasonsOfChange-img" 
                         />
                         
                         <!-- Video -->
                         <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\GreenSoundsPreview.mp4" type="video/mp4">
+                            <source src="assets\courseSchedulerDemo - 1736088350136.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     
                 </div>
-                <h2 class="experience-sub-title project-title">Green Sounds</h2>
+                <h2 class="experience-sub-title project-title">Course Scheduler</h2>
                 <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button">
-                        Demo
+                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/course-scheduler'">
+                        GitHub
                     </button>
-                    
+                    <button class="btn btn-color-2" type="button" onclick=cs()>
+                        Demo Video
+                    </button>
+                    <script>
+                        function cs() {
+                            // Replace 'your-video.mp4' with the path to your local video file
+                            var videoPath2 = "assets/courseSchedulerDemo - 1736088350136.mp4";
+                            var newTab = window.open();
+                            newTab.document.write(`
+                                <video width="640" height="360" controls autoplay>
+                                    <source src="${videoPath2}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            `);
+                        }
+                    </script>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -302,8 +362,8 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Object Tracking</h2>
                 <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button">
-                        Demo
+                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/object-tracking'">
+                        GitHub
                     </button>
                     
                 </div>
@@ -320,16 +380,16 @@
                         
                         <!-- Video -->
                         <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\GreenSoundsPreview.mp4" type="video/mp4">
+                            <source src="assets\populationvid.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     
                 </div>
-                <h2 class="experience-sub-title project-title">Green Sounds</h2>
+                <h2 class="experience-sub-title project-title">California Housing Prices</h2>
                 <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button">
-                        Demo
+                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/CalforniaHousingPrices'">
+                        GitHub
                     </button>
                     
                 </div>
