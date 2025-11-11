@@ -1,426 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "stylesheet" href = "mediaquesries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anushcka Joshi — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav id = "desktop-nav">
-        <div class = "logo">Anushcka Joshi</div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#experience">Experience</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav" class="site-nav">
+    <div class="logo">Anushcka Joshi</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav" class="site-nav">
+    <div class="logo">Anushcka Joshi</div>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="section__pic-container ascii-wrap">
+      <pre id="ascii-art" class="ascii-art"></pre>
+    </div>
+
+    <div class="section__text">
+      <p class="section__text__p1"></p>
+      <h1 class="title"></h1>
+      <p class="section__text__p2"></p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('assets/CreativeResumePixar.pdf')">
+          Download CV
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <p class="title">About Me</p>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Education</h3>
+            <p>Bsc. Computer Science, B. Des. Digital Arts and Media Design, The Pennsylvania State University, 2023-Present</p>
+            <p>The Assam Valley School, Batch of 2022</p>
+          </div>
+          <div class="details-container">
+            <h3>Experience</h3>
+            <p>Undergraduate Research Assistant, James Z. Wang Research Group, 2024-Present</p>
+            <p>Girls Who Code Instructor, Penn State, Present</p>
+            <p>Software Developer Intern, NewSpace Research and Technologies, 2021-2022</p>
+          </div>
         </div>
-    </nav>
-    <nav id = "hamburger-nav">
-        <div class = "logo">Anushcka Joshi</div>
-        <div class = "hamburger-menu">
-            <div class = "hamburger-icon" onclick = "toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class= "menu-links">
-                <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
-                <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
-                <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
-                <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
+        <div class="text-container" id="about-typing">
+          <p class="about-line">
+            I'm a creative technologist blending tech, art and design with a focus on interactive Media and an interest in Computer Vision, Machine Learning, and Generative Art.
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="experience-grid">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="skills-container">
+            <article><h3>Python</h3><p>Experienced</p></article>
+            <article><h3>Java</h3><p>Intermediate</p></article>
+            <article><h3>SQL</h3><p>Basic</p></article>
+            <article><h3>Flask</h3><p>Basic</p></article>
+            <article><h3>Tkinter</h3><p>Intermediate</p></article>
+            <article><h3>Streamlit</h3><p>Basic</p></article>
+          </div>
         </div>
-    </nav>
-    <section id = "profile">
-        <div class = "section__pic-container"> 
-            <pre id = "ascii-art" class = "ascii-art"></pre>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="skills-container">
+            <article><h3>HTML</h3><p>Intermediate</p></article>
+            <article><h3>CSS</h3><p>Intermediate</p></article>
+            <article><h3>JavaScript</h3><p>Basic</p></article>
+          </div>
         </div>
-        <div class="section__text hidden">
-            <p class="section__text__p1"></p>
-            <h1 class="title"></h1>
-            <p class="section__text__p2"></p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('assets/CreativeResumePixar.pdf')">
-                    Download CV
-                </button>
-            </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">CV & ML</h2>
+          <div class="skills-container">
+            <article><h3>OpenCV</h3><p>Intermediate</p></article>
+            <article><h3>Scikit-learn</h3><p>Basic</p></article>
+            <article><h3>SciPy</h3><p>Basic</p></article>
+            <article><h3>Pandas</h3><p>Basic</p></article>
+            <article><h3>NumPy</h3><p>Intermediate</p></article>
+          </div>
         </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Generative Art</h2>
+          <div class="skills-container">
+            <article><h3>Processing</h3><p>Intermediate</p></article>
+            <article><h3>Turtle</h3><p>Basic</p></article>
+          </div>
         </div>
-    </section>
-    <section id = "about">
-        <p class = "section__text__p1">Get to Know More</p>
-        <p class = "title">About Me</p>
-        <div class = "section-container">
-            <div class = about-details-container>
-                <div class = about-containers>
-                <div class = "details-container">
-                    <h3>Education</h3>
-                    <p>Bsc. Computer Science, B. Des. Digital Arts and Media Design, The Pennsylvania State University, 2023-Present</p>
-                    <p>The Assam Valley School, Batch of 2022</p>
-                </div>
-                <div class = "details-container">
-                    <h3> Experience</h3>
-                    <p>Undergraduate Research Assistant, James Z. Wang Research Group, 2024-Present</p>
-                    <p>Girls Who Code Instructor, Penn State, Present</p>
-                    <p>Software Developer Intern, NewSpace Research and Technologies, 2021-2022</p>
-                </div>
-                </div>
-                <div class="text-container" id="about-typing">
-                    <p class="about-line">
-                        I'm a creative technologist blending tech, art and design with a focus on interactive Media and an interest in Computer Vision, Machine Learning, and Generative Art.
-                    </p>
-                </div>
-                             
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/DeliverCImg.png" alt="DeliverC Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/DeliverCDemo.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="experience-grid">
-                <!-- Backend Development -->
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="skills-container">
-                        <article>
-                            <h3>Python</h3>
-                            <p>Experienced</p>
-                        </article>
-                        <article>
-                            <h3>Java</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>SQL</h3>
-                            <p>Basic</p>
-                        </article>
-                        <article>
-                            <h3>Flask</h3>
-                            <p>Basic</p>
-                        </article>
-                        <article>
-                            <h3>TKinter</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>Streamlit</h3>
-                            <p>Basic</p>
-                        </article>
-                    </div>
-                </div>
-                <!-- Frontend Development -->
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="skills-container">
-                        <article>
-                            <h3>HTML</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>CSS</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                        </article>
-                    </div>
-                </div>
-                <!-- CV & ML -->
-                <div class="details-container">
-                    <h2 class="experience-sub-title">CV & ML</h2>
-                    <div class="skills-container">
-                        <article>
-                            <h3>OpenCV</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>Scikit-learn</h3>
-                            <p>Basic</p>
-                        </article>
-                        <article>
-                            <h3>SciPy</h3>
-                            <p>Basic</p>
-                        </article>
-                        <article>
-                            <h3>Pandas</h3>
-                            <p>Basic</p>
-                        </article>
-                        <article>
-                            <h3>NumPy</h3>
-                            <p>Intermediate</p>
-                        </article>
-                    </div>
-                </div>
-                <!-- Generative Art -->
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Generative Art</h2>
-                    <div class="skills-container">
-                        <article>
-                            <h3>Processing</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>Turtle</h3>
-                            <p>Basic</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <h2 class="experience-sub-title project-title">DeliverC</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://www.linkedin.com/feed/update/urn:li:activity:7322464796849713152/'">Demo Video</button>
         </div>
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="details-container color-container">
-                <div class = "article-container">
-                    <div class="SeasonsOfChange-container">
-                        <!-- Image -->
-                        <img 
-                            src="assets\SeasonsOfChangeimg1.png" 
-                            alt="Seasons of Change Thumbnail" 
-                            class="SeasonsOfChange-img" 
-                        />
-                        
-                        <!-- Video -->
-                        <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\SeasonsOfChangePreview.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                </div>
-                <h2 class="experience-sub-title project-title">Seasons of Change</h2>
-                <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/seasons-of-change'">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" type="button" onclick="playVideo()">
-                        Installation Video
-                    </button>
-                    <script>
-                        function playVideo() {
-                            // Replace 'your-video.mp4' with the path to your local video file
-                            var videoPath = "assets/SeasonsOfChangeInstallationVideo.mp4";
-                            var newTab = window.open();
-                            newTab.document.write(`
-                                <video width="640" height="360" controls autoplay>
-                                    <source src="${videoPath}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            `);
-                        }
-                    </script>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class = "article-container">
-                    <div class="SeasonsOfChange-container">
-                        <!-- Image -->
-                        <img 
-                            src="assets\GreenSoundsimg.png" 
-                            alt="Seasons of Change Thumbnail" 
-                            class="SeasonsOfChange-img" 
-                        />
-                        
-                        <!-- Video -->
-                        <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\GreenSoundsPreview.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                </div>
-                <h2 class="experience-sub-title project-title">Green Sounds</h2>
-                <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/green-sounds'">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" type="button" onclick="poc()">
-                        Proof of Concept
-                    </button>
-                    <script>
-                        function poc() {
-                            // Replace 'your-video.mp4' with the path to your local video file
-                            var videoPath2 = "assets/GreenSounds.mp4";
-                            var newTab = window.open();
-                            newTab.document.write(`
-                                <video width="640" height="360" controls autoplay>
-                                    <source src="${videoPath2}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            `);
-                        }
-                    </script>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class = "article-container">
-                    <div class="SeasonsOfChange-container">
-                        <!-- Image -->
-                        <img 
-                            src="assets\ChatSample.png" 
-                            alt="Seasons of Change Thumbnail" 
-                            class="SeasonsOfChange-img" 
-                        />
-                        
-                        <!-- Video -->
-                        <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\P2PChat-demoVideo - 1735646874838.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                </div>
-                <h2 class="experience-sub-title project-title">Peer to Peer Chat</h2>
-                <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/P2P_Networking'">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" type="button" onclick=p2pvideo()>
-                        Video Demo
-                    </button>
-                    <script>
-                        function p2pvideo() {
-                            // Replace 'your-video.mp4' with the path to your local video file
-                            var videoPath2 = "assets/P2PChat-demoVideo - 1735646874838.mp4";
-                            var newTab = window.open();
-                            newTab.document.write(`
-                                <video width="640" height="360" controls autoplay>
-                                    <source src="${videoPath2}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            `);
-                        }
-                    </script>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class = "article-container">
-                    <div class="SeasonsOfChange-container">
-                        <!-- Image -->
-                        <img 
-                            src="assets\courseScheduler-img.png" 
-                            alt="Seasons of Change Thumbnail" 
-                            class="SeasonsOfChange-img" 
-                        />
-                        
-                        <!-- Video -->
-                        <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\courseSchedulerDemo - 1736088350136.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                </div>
-                <h2 class="experience-sub-title project-title">Course Scheduler</h2>
-                <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/course-scheduler'">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" type="button" onclick=cs()>
-                        Demo Video
-                    </button>
-                    <script>
-                        function cs() {
-                            // Replace 'your-video.mp4' with the path to your local video file
-                            var videoPath2 = "assets/courseSchedulerDemo - 1736088350136.mp4";
-                            var newTab = window.open();
-                            newTab.document.write(`
-                                <video width="640" height="360" controls autoplay>
-                                    <source src="${videoPath2}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            `);
-                        }
-                    </script>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class = "article-container">
-                    <div class="SeasonsOfChange-container">
-                        <!-- Image -->
-                        <img 
-                            src="assets\obj_tracking_img.png" 
-                            alt="Seasons of Change Thumbnail" 
-                            class="SeasonsOfChange-img" 
-                        />
-                        
-                        <!-- Video -->
-                        <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\obj-tracking-final-rec - 1735620793600.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                </div>
-                <h2 class="experience-sub-title project-title">Object Tracking</h2>
-                <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/object-tracking'">
-                        GitHub
-                    </button>
-                    
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class = "article-container">
-                    <div class="SeasonsOfChange-container">
-                        <!-- Image -->
-                        <img 
-                            src="assets\pop-img.png" 
-                            alt="Seasons of Change Thumbnail" 
-                            class="SeasonsOfChange-img" 
-                        />
-                        
-                        <!-- Video -->
-                        <video class="SeasonsOfChange-video" muted loop autoplay>
-                            <source src="assets\populationvid.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                </div>
-                <h2 class="experience-sub-title project-title">California Housing Prices</h2>
-                <div class="btn-container2">
-                    <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/CalforniaHousingPrices'">
-                        GitHub
-                    </button>
-                    
-                </div>
-            </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/SeasonsOfChangeimg1.png" alt="Seasons of Change Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/SeasonsOfChangePreview.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-    </section>
-    <section id = 'contact'>
-        <p class = "section__text__p1">Get in Touch</p>
-        <h1 class = "title">Contact Me</h1>
-        <div class = "contact-info-upper-container">
-            <div class = "contact-info-container">
-            <p><a href = "mailto:anushckajoshi@gmail.com">anushckajoshi@gmail.com</a></p>
-            </div>
-            <div class = "contact-info-container">
-                <p><a href = "https://www.linkedin.com">linkedin</a></p>
-                </div>
+        <h2 class="experience-sub-title project-title">Seasons of Change</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/seasons-of-change'">GitHub</button>
+          <button class="btn btn-color-2" type="button" onclick="openVideo('assets/SeasonsOfChangeInstallationVideo.mp4')">Installation Video</button>
         </div>
-    </section>
-    <footer>
-        <nav>
-            <div class = "nav-links-container">
-                <ul class = "nav-links">
-                    <li><a href = "#about">About</a></li>
-                    <li><a href = "#experience">Experience</a></li>
-                    <li><a href = "#projects">Projects</a></li>
-                    <li><a href = "#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p> Copyright &#169; 2024 Anushcka Joshi. All Rights Reserved<p>
-    </footer>
-    <script src = "script.js"></script>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/GreenSoundsimg.png" alt="Green Sounds Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/GreenSoundsPreview.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <h2 class="experience-sub-title project-title">Green Sounds</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/green-sounds'">GitHub</button>
+          <button class="btn btn-color-2" type="button" onclick="openVideo('assets/GreenSounds.mp4')">Proof of Concept</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/ChatSample.png" alt="Peer to Peer Chat Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/P2PChat-demoVideo%20-%201735646874838.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <h2 class="experience-sub-title project-title">Peer to Peer Chat</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/P2P_Networking'">GitHub</button>
+          <button class="btn btn-color-2" type="button" onclick="openVideo('assets/P2PChat-demoVideo%20-%201735646874838.mp4')">Video Demo</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/courseScheduler-img.png" alt="Course Scheduler Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/courseSchedulerDemo%20-%201736088350136.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <h2 class="experience-sub-title project-title">Course Scheduler</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe/course-scheduler'">GitHub</button>
+          <button class="btn btn-color-2" type="button" onclick="openVideo('assets/courseSchedulerDemo%20-%201736088350136.mp4')">Demo Video</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/obj_tracking_img.png" alt="Object Tracking Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/obj-tracking-final-rec%20-%201735620793600.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <h2 class="experience-sub-title project-title">Object Tracking</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/object-tracking'">GitHub</button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <div class="SeasonsOfChange-container">
+            <img src="assets/pop-img.png" alt="California Housing Prices Thumbnail" class="SeasonsOfChange-img" />
+            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+              <source src="assets/populationvid.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <h2 class="experience-sub-title project-title">California Housing Prices</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2" type="button" onclick="window.location.href='https://github.com/akkajoe-Projects/CalforniaHousingPrices'">GitHub</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <p><a href="mailto:anushckajoshi@gmail.com">anushckajoshi@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p> Copyright &#169; 2024 Anushcka Joshi. All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
