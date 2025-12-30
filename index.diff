@@ -1,0 +1,17 @@
+diff --git a/index.html b/index.html
+index 0f182c3..29fd18f 100644
+--- a/index.html
++++ b/index.html
+@@ -141,9 +141,10 @@
+         <div class="article-container">
+           <div class="SeasonsOfChange-container">
+             <img src="assets/DeliverCImg.png" alt="DeliverC Thumbnail" class="SeasonsOfChange-img" />
+-            <video class="SeasonsOfChange-video" muted loop autoplay playsinline preload="auto">
+-              <source src="assets/DeliverCDemo.mp4" type="video/mp4" />
++            <video muted loop autoplay playsinline preload="auto">
++              <source src="assets/web/DeliverCDemo-web.mp4" type="video/mp4">
+             </video>
++
+           </div>
+         </div>
+         <h2 class="experience-sub-title project-title">DeliverC</h2>

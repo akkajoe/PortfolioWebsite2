@@ -161,12 +161,12 @@ section{
 .btn:hover{ background:var(--accent); color:#000; }
 
 #about{ position:relative; text-align:center; min-height:100vh; }
-#about .title{ font-size:2rem; margin-bottom:1rem; }
+#about .title{ font-size:4rem; margin-bottom:1rem; }
 .about-containers{ gap:2rem; margin:2rem 0; }
 .about-details-container{ justify-content:center; flex-direction:column; }
 .about-containers,.about-details-container{ display:flex; }
 .details-container{ padding:1.5rem; flex:1; text-align:center; background:none; border:none; }
-#about-typing .about-line{ display:inline; overflow:hidden; white-space:normal; font-size:1.5rem; }
+#about-typing .about-line{ display:inline; overflow:hidden; white-space:normal; font-size:1.7rem; }
 .cursor{ display:inline-block; width:3px; height:1.5rem; background:var(--text); animation:blink .5s step-end infinite; position:absolute; }
 .cursor-hidden{ animation:none; background:transparent; }
 @keyframes blink{ 50%{ background:transparent; } }
@@ -184,7 +184,7 @@ article{
   padding:.5rem 1rem; background:rgba(0,0,0,.35);
   border-radius:10px; border:1px dashed rgba(0,255,65,.35);
 }
-article h3{ font-size:1.1rem; color:#fff; margin:0; }
+article h3{ font-size:1.5rem; color:#fff; margin:0; }
 article p{ margin:0; color:#cfcfcf; font-size:.9rem; }
 
 .SeasonsOfChange-container{ position:relative; width:300px; height:200px; margin:0 auto; }
@@ -200,7 +200,8 @@ article p{ margin:0; color:#cfcfcf; font-size:.9rem; }
 #about .details-container,
 #experience .details-container,
 #projects .color-container{
-  background:rgba(0,0,0,.65);
+  background:rgba(0,0,0,.65); 
+  font-size: 1.5rem;;
   border:1px solid rgba(0,255,65,.35);
   border-radius:16px;
   box-shadow:0 10px 30px rgba(0,0,0,.45), 0 0 0 1px rgba(0,255,65,.08) inset;
@@ -228,7 +229,7 @@ article p{ margin:0; color:#cfcfcf; font-size:.9rem; }
 .contact-info-container p{ font-size:larger; margin:0; }
 .contact-info-container a{ text-decoration:none; color:var(--text); }
 .contact-info-container a:hover{ color:var(--accent); }
-.section__text__p1,.title{ margin-bottom:1rem; }
+.section__text__p1,.title{ margin-bottom:1rem; font-size: 2rem;}
 
 footer{ height:20vh; margin:0 1rem; color:#bbb; display:flex; align-items:center; justify-content:center; }
 footer p{ text-align:center; }
